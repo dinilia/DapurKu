@@ -4,8 +4,7 @@ DapurKu! adalah aplikasi Android berbasis Kotlin dan Jetpack Compose yang diranc
 
 ## ✨ Fitur Utama
 - Input nama dan deskripsi resep
-- Pilih kategori resep (Makanan, Minuman, Camilan)
-- Tambahkan gambar resep (PNG/JPG)
+- Pilih kategori resep (Makanan berat atau makanan ringan)
 - Tampilkan daftar resep yang telah disimpan
 - Share resep ke aplikasi lain (WhatsApp, Email, dll)
 - Dukungan 2 bahasa: Bahasa Indonesia dan Bahasa Inggris
