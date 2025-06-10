@@ -21,15 +21,15 @@ import java.io.ByteArrayOutputStream
 
 class MainViewModel : ViewModel() {
 
-    private var data = mutableStateOf(emptyList<Resep>())
+    var data = mutableStateOf(emptyList<Resep>())
 
-    private var status = MutableStateFlow(ApiStatus.LOADING)
+    var status = MutableStateFlow(ApiStatus.LOADING)
 
-    private var errorMessage = mutableStateOf<String?>(null)
+    var errorMessage = mutableStateOf<String?>(null)
 
-    private var querySuccess = mutableStateOf(false)
+    var querySuccess = mutableStateOf(false)
 
-    private fun retrieveData(userId: String) {
+    fun retrieveData(userId: String) {
         viewModelScope.launch(Dispatchers.IO) {
             status.value = ApiStatus.LOADING
             try {
