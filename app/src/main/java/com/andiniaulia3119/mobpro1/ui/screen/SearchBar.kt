@@ -9,7 +9,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.FilterAlt
 import androidx.compose.material.icons.twotone.Search
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
@@ -25,7 +24,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.andiniaulia3119.mobpro1.R
 
 @Composable
 fun SearchBar(
@@ -69,7 +70,10 @@ fun SearchBar(
             IconButton(
                 onClick = { isShowingOptions = !isShowingOptions },
                 content = {
-                    Icon(imageVector = Icons.Default.FilterAlt, contentDescription = "Filter")
+                    Icon(
+                        painter = painterResource(R.drawable.baseline_filter_alt_24),
+                        contentDescription = "Filter"
+                    )
                 }
             )
         }

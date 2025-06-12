@@ -54,7 +54,7 @@ import androidx.credentials.GetCredentialResponse
 import androidx.credentials.exceptions.ClearCredentialException
 import androidx.credentials.exceptions.GetCredentialException
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.viewbinding.BuildConfig
+import com.andiniaulia3119.mobpro1.BuildConfig
 import com.andiniaulia3119.mobpro1.R
 import com.andiniaulia3119.mobpro1.model.Resep
 import com.andiniaulia3119.mobpro1.model.User
